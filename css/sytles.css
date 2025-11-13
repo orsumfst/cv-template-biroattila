@@ -431,58 +431,74 @@ img.floatLeft {
 /* === CONTACT FORM  ===*/	
 
 #page-wrap {
-	width: 660px;
-	background: white;
-	padding: 20px 50px 20px 50px;
-	margin: 20px auto;
-	min-height: 500px;
-	height: auto !important;
-	height: 500px;
+  width: 300px;
+  padding: 20px 50px;
+  margin: 20px auto;
+  background: none; 
+  box-shadow: none;
 }
 
 #contact-area {
-	width: 429px;
-	margin: 15px 0 0;
-	font-family: 'PT Sans Narrow', sans-serif;
-    color: #74767a;
-    font-size: 12px;
-    font-weight:bold;
+  width: 100%;
+  margin-top: 15px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: #74767a;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-#contact-area input, #contact-area textarea {
-	padding: 5px;
-	width: 310px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	margin: 0px 0px 10px 0px;
-	border: 1px solid #ccc;
-}
 
+#contact-area input,
 #contact-area textarea {
-	height: 70px;
+  padding: 8px;
+  width: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 6px 0 34px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1); 
+  color: #222;
 }
 
-#contact-area textarea:focus, #contact-area input:focus {
-	border: 1px solid #022E63;
+
+#contact-area input:focus,
+#contact-area textarea:focus {
+  border-color: #1b579e;
+  outline: none;
+  box-shadow: 0 0 4px rgba(27, 87, 158, 0.6);
 }
+
 
 #contact-area input.submit-button {
-	width: 100px;
-	float: right;
-	margin: 0 36px 0 0;
-	background-color: #022E63;
-	color:#FFFFFF;
-	font-family: 'PT Sans Narrow',sans-serif;
-    font-size: 18px;
-	font-weight:bold;
+  width: 100px;
+  float: none;
+  display: block;
+  margin: 10px auto 0;
+  background-color: #1b579e;
+  color: #fff;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-label {
-    float: left;
-    font-size: 1.4em;
-    padding-top: 0;
-    text-align: left;
-    width: 70px;
+#contact-area input.submit-button:hover {
+  background-color: #022E63;
+}
+
+/* Cím */
+#page-wrap h1 {
+  color: #022E63;
+  font-family: 'PT Sans Narrow', cursive;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+  
 }
 
 /* ===WHY ME  ===*/	
@@ -505,6 +521,10 @@ label {
     width: 372px;;
 	}
 
+	.why_separator {
+    border-bottom: 3px dotted #bebebe; 
+    margin: 15px 0; 
+    width: 100%;}
 
 /* ===DOWN TOP - GALLERY STYLE  ===*/		
 .nav_up{
@@ -547,10 +567,29 @@ label {
 	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
 }
 
+#hobby-icons-inline {
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: middle;
+    height: 42px;
+}
 
+#hobby-icons-inline img {
+    width: 27px;
+    height: 27px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    margin-right: 5px;
+}
 
-	
-	
-	
-	
-	
+#hobby-icons-inline img.active {
+    opacity: 1;
+}
+
+#flag-container img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    vertical-align: middle;
+    transition: opacity 2s ease;
+}
